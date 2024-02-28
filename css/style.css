@@ -225,7 +225,6 @@ p.text {
 .product-preview {
     max-width: 790px;
     width: 100%;
-    border-radius: 20px;
     position: relative;
     overflow: hidden;
     background-color: var(--color-white);
@@ -246,7 +245,7 @@ p.text {
     color: #fff;
     border: none;
     background-color: #2b6bb0;
-    border-radius: 20px 0;
+    border-radius: 20px 0 0 0;
     padding: 7px 11px;
     cursor: pointer;
     position: absolute;
