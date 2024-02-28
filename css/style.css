@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "Inter";
+    font-weight: 400;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: "Inter";
+    font-weight: 900;
+    src: url(../fonts/Inter-Black.ttf);
+}
+@font-face {
+    font-family: "Inter";
+    font-weight: 100;
+    src: url(../fonts/Inter-Thin.ttf);
+}
+
+:root {
+    --font-primary: "Inter";
+    --color-white: #FFFFFF;
+    --color-red: #E2282C;
+    --color-bg: #1E1E1E;
+    --color-gray: #D9D9D9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    font-family: var(--font-primary);
+    background-color: var(--color-bg);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+.header {
+    padding: 20px 20px;
+    background-color: var(--color-white);
+}
+.header .logo img {
+    width: fit-content;
+    display: block;
+    width: 100%;
+    max-width: 358px;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    background-color: var(--color-white);
+    padding: 10px 40px;
+    gap: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .logo img {
+    width: 109px;
+}
+.m-auto {
+    margin: 0 auto;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 65px 80px;
+}
+.head-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray);
+    min-height: 110px;
+    padding: 10px 20px;
+    width: 100%;
+}
+h1.title {
+    color: var(--color-red);
+    font-family: var(--font-primary);
+    font-weight: 900;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.gallery-flex {
+    background-color: var(--color-white);
+    border-radius: 50px;
+    padding: 30px 50px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.gallery-flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: 37px 34px;
+}
+h2.title {
+    font-family: var(--font-primary);
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+}
+h2.title.gallery-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 890px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 100px;
+    height: 93px;
+    margin: 0 auto;
+}
+.gallery-flex__item {
+    display: block;
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    background-color: var(--color-white);
+    border: 1px solid #000;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+p.text {
+    font-family: var(--font-primary);
+    font-size: 13px;
+}
+.links-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    text-align: center;
+}
+.links-flex a, .links-flex .adress {
+    color: #000;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 10px;
+}
+.links-flex a.phone {
+    text-decoration: underline;
+}
+.login-form {
+    width: 100%;
+    max-width: 333px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: var(--color-white);
+    padding: 20px 13px 40px;
+}
+.login-input {
+    background-color: var(--color-gray);
+    color: #000;
+    margin-top: 22px;
+    font-size: 32px;
+    font-family: var(--font-primary);
+    font-weight: 100;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 6px 30px 5px;
+    text-align: center;
+}
+.login-input:focus::placeholder {
+    opacity: 0;
+}
+.login-input::placeholder {
+    color: #000;
+}
+.login-button {
+    width: 100%;
+    background-color: var(--color-red);
+    border: none;
+    color: var(--color-white);
+    font-size: 32px;
+    font-family: var(--font-primary);
+    font-weight: 900;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-top: 33px;
+    padding: 6px 6px 5px;
+    cursor: pointer;
+    transition: background-color 300ms ease-out;
+}
+.product-flex {
+    display: flex;
+    gap: 40px;
+}
+.product-preview {
+    max-width: 790px;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-white);
+}
+.product-preview .preview {
+    width: 100%;
+    max-width: 790px;
+}
+.preview-model {
+    font-size: 13px;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    background-color: #2b6bb0;
+    border-radius: 20px 0;
+    padding: 7px 11px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.preview-model svg {
+    min-width: 20px;
+}
+.show-model {
+    display: block;
+    font-size: 16px;
+    background-color: var(--color-white);
+    border-radius: 3px;
+    color: var(--color-red);
+    font-family: var(--font-primary);
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 12px 35px;
+    font-weight: 900;
+    margin-top: 30px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.product-info .title {
+    font-family: var(--font-primary);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+.product-info .description {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+@media (min-width: 990px) {
+    .login-button:hover {
+        background-color: #CB1D20;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .product-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+} 
+@media (max-width: 740px) {
+    .gallery-flex-inner {
+        justify-content: space-between;
+        gap: 10px 10px;
+    }
+    .container {
+        padding: 30px 30px 50px;
+    }
+    .gallery-flex__item {
+        width: 82px;
+        height: 82px;
+        min-width: 82px;
+    }
+    .footer {
+        padding: 10px 20px;
+    }
+    h2.title {
+        font-size: 20px;
+    }
+    h2.title.gallery-title {
+        height: 54px;
+        font-size: 15px;
+    }
+    h1.title {
+        font-size: 32px;
+    }
+    .gallery-flex {
+        padding: 10px 30px 40px;
+        gap: 15px;
+    }
+    .login-button, .login-input {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+}
